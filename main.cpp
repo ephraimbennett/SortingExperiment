@@ -10,7 +10,7 @@
 
 using namespace std;
 
-vector<int> test(const vector<int> &, int);
+vector<int> test(const vector<int> &, int, int);
 
 int main()
 {
@@ -29,7 +29,7 @@ int main()
     }
     instream.close();
 
-    test(arr, 1);
+    test(arr, 1, 16);
 }
 
 /**
@@ -37,12 +37,12 @@ int main()
  * passing in an already sorted vector. Use this method to pass in the vector by copy so the original does not
  * change.
  */
-void mergeWrapper(vector<int> arr)
+void mergeWrapper(vector<int> arr, int k)
 {
-    mergeSort(arr, 0, arr.size() - 1);
+    mergeSort(arr, 0, arr.size() - 1, k);
 }
 
-vector<int> test(const vector<int> &arr, int times)
+vector<int> test(const vector<int> &arr, int times, int k)
 {
     vector<int> t = arr;
     std::clock_t start_time = std::clock();
@@ -58,7 +58,7 @@ vector<int> test(const vector<int> &arr, int times)
     t = arr;
     start_time = std::clock();
     for (size_t i = 0; i < times; ++i) {
-        mergeWrapper(t);
+        mergeWrapper(t, k);
     }
     std::clock_t merge_time = std::clock() - start_time;
     std::cout << "Merge Time: "

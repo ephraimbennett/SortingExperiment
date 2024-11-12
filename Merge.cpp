@@ -57,12 +57,12 @@ void merge(vector<int>& arr, int left,
 
 // begin is for left index and end is right index
 // of the sub-array of arr to be sorted
-void mergeSort(vector<int>& arr, int left, int right)
+void mergeSort(vector<int>& arr, int left, int right, int k)
 {
     if (left >= right)
         return;
 
-    if (right - left <= 16) {
+    if (right - left <= k) {
         vector<int> temp;
         for (int i = 0; i < right - left; ++i)
         {
@@ -77,8 +77,8 @@ void mergeSort(vector<int>& arr, int left, int right)
     }
 
     int mid = left + (right - left) / 2;
-    mergeSort(arr, left, mid);
-    mergeSort(arr, mid + 1, right);
+    mergeSort(arr, left, mid, k);
+    mergeSort(arr, mid + 1, right, k);
     merge(arr, left, mid, right);
 }
 
