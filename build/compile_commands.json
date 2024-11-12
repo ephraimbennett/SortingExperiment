@@ -1,0 +1,17 @@
+[
+{
+  "directory": "C:/Users/Patri/Documents/431/HW5/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -g -O3 -march=native -flto -fopenmp -o CMakeFiles\\HW5.dir\\main.cpp.obj -c C:\\Users\\Patri\\Documents\\431\\HW5\\main.cpp",
+  "file": "C:/Users/Patri/Documents/431/HW5/main.cpp"
+},
+{
+  "directory": "C:/Users/Patri/Documents/431/HW5/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -g -O3 -march=native -flto -fopenmp -o CMakeFiles\\HW5.dir\\Merge.cpp.obj -c C:\\Users\\Patri\\Documents\\431\\HW5\\Merge.cpp",
+  "file": "C:/Users/Patri/Documents/431/HW5/Merge.cpp"
+},
+{
+  "directory": "C:/Users/Patri/Documents/431/HW5/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe   -g -O3 -march=native -flto -fopenmp -o CMakeFiles\\HW5.dir\\Insertion.cpp.obj -c C:\\Users\\Patri\\Documents\\431\\HW5\\Insertion.cpp",
+  "file": "C:/Users/Patri/Documents/431/HW5/Insertion.cpp"
+}
+]
