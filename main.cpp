@@ -12,6 +12,11 @@ using namespace std;
 
 vector<int> test(const vector<int> &, int, int);
 
+/**
+ * Right now, main is set up to conduct the experiment for Q2, however it can easily be changed back to Q1 as well.
+ * This can be done by adjusting the N value, and the number of times ran to the desired sizes. To make this a "pure"
+ * Merge Sort, simply set the K value = 0.
+ */
 int main()
 {
     ifstream instream("../nums.txt");
@@ -22,14 +27,15 @@ int main()
 
     vector<int> arr;
     string x;
-    for (size_t i = 0; i < 250000; ++i)
+    int N = 125000;
+    for (size_t i = 0; i < N; ++i)
     {
         getline(instream, x);
         arr.push_back(stoi(x));
     }
     instream.close();
 
-    test(arr, 1, 16);
+    test(arr, 1, 2400);
 }
 
 /**
